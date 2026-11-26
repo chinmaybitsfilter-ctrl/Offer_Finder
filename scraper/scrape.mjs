@@ -115,6 +115,9 @@ function dedupe(offers) {
     const distinct = inside.filter((c) => !inside.some((d) => d !== c && (d.includes(c) || c.includes(d))));
     return distinct.length < 2;
   });
+  // drop summary blocks that list several other offers' coupon codes
+  const codeKey = (c) => c.toLowerCase().replace(/[^a-z0-9]/g, "");
+  list = list.filter((a) => list.filter((b) => b !== a && b.code && codeKey(b.code) !== codeKey(a.code) && a.key.includes(codeKey(b.code))).length < 2);
   // drop an offer if another one says the same thing and has a code / more detail
   list = list.filter((a) => !list.some((b) => b !== a && b.key !== a.key && b.key.includes(a.core) &&
     (b.code && !a.code || b.key.length > a.key.length && !(a.code && !b.code))));
