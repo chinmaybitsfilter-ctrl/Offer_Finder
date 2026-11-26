@@ -1,6 +1,6 @@
 {
   "date": "2026-11-26",
-  "generatedAt": "2026-11-26T09:51:15.311Z",
+  "generatedAt": "2026-11-26T09:54:34.142Z",
   "brands": [
     {
       "id": "dominos",
@@ -11,7 +11,7 @@
       "source": "https://www.dominos.co.in/offers",
       "offers": [
         {
-          "title": "And to shoo away those end-of-the-month blues while placing your order with our pizza restaurant, check out the everyday",
+          "title": "…everyday value offer of 2 pizzas starting at just ₹99 (regular size) and ₹199 (medium size) each.",
           "description": "",
           "code": ""
         }
@@ -29,12 +29,12 @@
       "offers": [
         {
           "title": "Medium Pan Pizzas Starting At ₹ 199.",
-          "description": "Medium Pan Pizzas Starting At ₹ 199",
+          "description": "",
           "code": ""
         },
         {
           "title": "Personal Pan Pizzas Starting At ₹ 99.",
-          "description": "Personal Pan Pizzas Starting At ₹ 99",
+          "description": "",
           "code": ""
         },
         {
@@ -73,13 +73,18 @@
           "code": ""
         },
         {
-          "title": "1 Plus 1 Personal San Francisco Style Meal for 2 .",
-          "description": "Choose any 2 of your favorite San Francisco Style pizza with 1 Free Pepsi",
+          "title": "Choose any 2 of your favorite San Francisco Style pizza with 1 Free Pepsi",
+          "description": "1 Plus 1 Personal San Francisco Style Meal for 2 .",
           "code": ""
         },
         {
-          "title": "Rs.",
-          "description": "100 Off on bill value above Rs.400. Valid on Ala carte orders, not applicable on deals",
+          "title": "Rs. 100 Off on bill value above Rs.400.",
+          "description": "Valid on Ala carte orders, not applicable on deals",
+          "code": ""
+        },
+        {
+          "title": "Rs. 125 Off on bill value above Rs.500.",
+          "description": "Valid on Ala carte orders, not applicable on deals",
           "code": ""
         },
         {
@@ -93,13 +98,8 @@
           "code": ""
         },
         {
-          "title": "40% Off up to 125 on bill value above 300.",
+          "title": "Rs. 300 Off on bill value above Rs.600.",
           "description": "Valid on Ala carte orders, not applicable on deals",
-          "code": ""
-        },
-        {
-          "title": "Flavour Fun Box of 4 with Free Pepsi.",
-          "description": "Get 4 assorted Flavor Fun Pizzas with Free Pepsi. Perfect pizza crust topped with exciting new sauces, cheesy dressing & your favorite toppings",
           "code": ""
         }
       ],
@@ -115,78 +115,58 @@
       "source": "https://www.lapinozpizza.in/offers",
       "offers": [
         {
-          "title": "SAVE50 COPY Get 50% OFF on Exotic & Specialty Pizzas Only Valid on Exotic & Specialty Pizzas – Regular, Medium & Large R",
+          "title": "Get 50% OFF on Exotic & Specialty Pizzas Only Valid on Exotic & Specialty Pizzas – Regular, Medium & Large Read more",
           "description": "",
-          "code": ""
-        },
-        {
-          "title": "Get 50% OFF on Exotic & Specialty Pizzas",
-          "description": "",
-          "code": ""
-        },
-        {
-          "title": "LPN200 COPY Get Flat Discount of Rs.200 on Minimum Billing of Rs.999.",
-          "description": "Get Flat Discount of Rs.200 on Minimum Billing of Rs.999. Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
-          "code": ""
+          "code": "SAVE50"
         },
         {
           "title": "Get Flat Discount of Rs.200 on Minimum Billing of Rs.999.",
-          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
-          "code": ""
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
+          "code": "LPN200"
         },
         {
-          "title": "B2G1 FREE COPY Buy 2 Items and Get 1 Free!!!",
-          "description": "Buy 2 Items and Get 1 Free on MOV 349: Applicable on : veg pizza/non veg pizza , sides , desserts , international pizzas and double burst Read more",
-          "code": ""
-        },
-        {
-          "title": "B2G1 FREE COPY",
+          "title": "Buy 2 Items and Get 1 Free!!!",
           "description": "",
-          "code": ""
+          "code": "B2G1 FREE"
         },
         {
-          "title": "LP50FR2 COPY Get your 2nd pizza at 50% Off Get your 2nd pizza at 50% Off Valid Only on Regular,Medium and Large Pizza Re",
+          "title": "Get your 2nd pizza at 50% Off Valid Only on Regular,Medium and Large Pizza Read more",
           "description": "",
-          "code": ""
-        },
-        {
-          "title": "Get your 2nd pizza at 50% Off",
-          "description": "",
-          "code": ""
-        },
-        {
-          "title": "Get your 2nd pizza at 50% Off Valid Only on Regular,Medium and Large Pizza",
-          "description": "",
-          "code": ""
-        },
-        {
-          "title": "LPN100 COPY Get Flat Discount of Rs.100 on Minimum Billing of Rs.599.",
-          "description": "Get Flat Discount of Rs.100 on Minimum Billing of Rs.599. Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
-          "code": ""
+          "code": "LP50FR2"
         },
         {
           "title": "Get Flat Discount of Rs.100 on Minimum Billing of Rs.599.",
-          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
-          "code": ""
-        },
-        {
-          "title": "LPN75 COPY Get Flat Discount of Rs.75 on Minimum Billing of Rs.399 Get Flat Discount of Rs.75 on Minimum Billing of Rs.3",
           "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
-          "code": ""
+          "code": "LPN100"
         },
         {
           "title": "Get Flat Discount of Rs.75 on Minimum Billing of Rs.399.",
-          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
-          "code": ""
-        },
-        {
-          "title": "LPN50 COPY Get Flat Discount of Rs.50 on Minimum Billing of Rs.299 Get Flat Discount of Rs.50 on Minimum Billing of Rs.2",
           "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
-          "code": ""
+          "code": "LPN75"
         },
         {
           "title": "Get Flat Discount of Rs.50 on Minimum Billing of Rs.299.",
-          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
+          "code": "LPN50"
+        },
+        {
+          "title": "50% off upto Rs 75/- on orders above Rs.200 for new customers 50% Off on orders above Rs.200 for New Users Not valid on BOGO, Classic Pizzas",
+          "description": "",
+          "code": "LPNEW50"
+        },
+        {
+          "title": "50% Off on orders above Rs.200, Max.discount Rs.250 Valid for Lost Users - 50% Off on orders above Rs.200 , Max discount Rs. 250, Not valid ",
+          "description": "",
+          "code": "LPFLAT50"
+        },
+        {
+          "title": "50% Off on orders above Rs.200 for New Users Not valid on BOGO, Classic Pizzas, Beverages, Slash Menu",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "Valid for Lost Users - 50% Off on orders above Rs.200 , Max discount Rs. 250, Not valid on BOGO, Classic Pizzas, Beverages, Slash Menu",
+          "description": "",
           "code": ""
         }
       ],
@@ -213,27 +193,17 @@
       "source": "https://www.mojopizza.in/offers",
       "offers": [
         {
-          "title": "For New Users.",
-          "description": "Flat 50% OFF upto ₹150 on first order",
+          "title": "Flat 50% OFF upto ₹150 on first order",
+          "description": "For New Users.",
           "code": "PIZZA150"
         },
         {
-          "title": "For All Users.",
-          "description": "Get Free Chocolava Cake",
+          "title": "Get Free Chocolava Cake",
+          "description": "For All Users.",
           "code": "FREEDELIGHT"
         },
         {
-          "title": "All Offers Flat OFF Flat OFF For New Users Flat 50% OFF upto ₹150 on first order PIZZA150 For All Users Get Free Chocola",
-          "description": "",
-          "code": ""
-        },
-        {
-          "title": "For New Users Flat 50% OFF upto ₹150 on first order PIZZA150 For All Users Get Free Chocolava Cake FREEDELIGHT",
-          "description": "",
-          "code": ""
-        },
-        {
-          "title": "Flat 50% OFF upto ₹150 on first order",
+          "title": "…Offers Flat OFF Flat OFF For New Users Flat 50% OFF upto ₹150 on first order PIZZA150 For All Users Get Free Chocolava Cake FREEDELIGHT Hom",
           "description": "",
           "code": ""
         },
