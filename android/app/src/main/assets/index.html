@@ -134,7 +134,7 @@ function offerHtml(o) {
 
 function brandOffersHtml(b) {
   if (!b) return `<div class="none">Local shop — no online offers published. Call to ask about today's deal.</div>`;
-  if (!b.offers?.length) return `<div class="none">No offers found on ${esc(b.name)}'s official site today.</div>`;
+  if (!b.offers?.length) return `<div class="none">${esc(b.name)} shows its offers only inside its app today — tap “Order on ${esc(b.name)}” to see them.</div>`;
   return `<div class="offers">${b.offers.map(offerHtml).join("")}</div>` +
     (b.stale ? `<div class="stale">⚠ Couldn't refresh today — showing offers from ${esc(b.date)}.</div>` : "");
 }

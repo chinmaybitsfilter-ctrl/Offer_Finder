@@ -24,12 +24,33 @@ function clean(s) {
   return String(s ?? "").replace(/\s+/g, " ").trim();
 }
 
+const COPY_CODE_RE = /^([A-Z0-9]{3,15}(?: [A-Z0-9]{2,8})?)\s+(?:COPY|APPLY|TAP TO COPY)\b\s*/i;
+
 function toOffer(text, codeHint) {
-  const t = clean(text);
+  let t = clean(text);
   if (t.length < 8 || t.length > 260 || JUNK_RE.test(t)) return null;
-  const code = clean(codeHint) || (t.match(CODE_RE) || [])[1] || "";
-  const [first, ...rest] = t.split(/(?<=[.!|])\s+/);
-  return { title: first.slice(0, 120), description: rest.join(" ").slice(0, 200), code };
+  let code = clean(codeHint);
+  const copy = t.match(COPY_CODE_RE);          // e.g. "SAVE50 COPY Get 50% OFF..."
+  if (copy) { code = code || copy[1].toUpperCase(); t = t.slice(copy[0].length); }
+  code = code || (t.match(CODE_RE) || [])[1] || "";
+  // cards often repeat their heading in the body: "X ... X ... details" -> "X ... details"
+  for (let n = Math.floor(t.length / 2); n >= 15; n--) {
+    const head = t.slice(0, n).trim();
+    if (t.slice(n).trimStart().startsWith(head)) { t = t.slice(n).trim(); break; }
+  }
+  // split into sentences; lead with the one that actually states the deal
+  const parts = t.split(/(?<=[.!|])(?<!\b(?:rs|no|min|max|approx)\.)\s+/i).filter(Boolean);
+  const i = Math.max(0, parts.findIndex((x) => STRONG_RE.test(x)));
+  let title = parts[i] || t;
+  if (title.length > 110) {           // long paragraph: start near the actual deal
+    const m = title.search(STRONG_RE);
+    const from = title.lastIndexOf(" ", Math.max(0, m - 45));
+    if (from > 0) title = "…" + title.slice(from + 1);
+  }
+  const key = (x) => x.toLowerCase().replace(/[^a-z0-9]/g, "");
+  const rest = parts.filter((x, j) => j !== i && !key(title).includes(key(x)) && !key(x).includes(key(title))).join(" ");
+  if (!STRONG_RE.test(title) && !code) return null;
+  return { title: title.slice(0, 140), description: rest.slice(0, 200), code };
 }
 
 // Walk JSON from the site's own API calls (same backend the official app uses).
@@ -86,14 +107,24 @@ async function offersFromDom(page) {
 }
 
 function dedupe(offers) {
+  const norm = (o) => `${o.code} ${o.title} ${o.description}`.toLowerCase().replace(/[^a-z0-9]/g, "");
+  let list = offers.filter(Boolean).map((o) => ({ ...o, key: norm(o), core: o.title.toLowerCase().replace(/[^a-z0-9]/g, "") }));
+  // drop "wrapper" blocks that contain two or more other offers
+  list = list.filter((a) => {
+    const inside = [...new Set(list.filter((b) => b !== a && b.core.length > 8 && b.core !== a.core && a.key.includes(b.core)).map((b) => b.core))];
+    const distinct = inside.filter((c) => !inside.some((d) => d !== c && (d.includes(c) || c.includes(d))));
+    return distinct.length < 2;
+  });
+  // drop an offer if another one says the same thing and has a code / more detail
+  list = list.filter((a) => !list.some((b) => b !== a && b.key !== a.key && b.key.includes(a.core) &&
+    (b.code && !a.code || b.key.length > a.key.length && !(a.code && !b.code))));
   const seen = new Set();
   const out = [];
-  for (const o of offers) {
-    if (!o) continue;
-    const key = (o.code || o.title).toLowerCase().replace(/[^a-z0-9]/g, "").slice(0, 40);
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    out.push(o);
+  for (const o of list) {
+    const k = (o.code || o.core).slice(0, 40);
+    if (!k || seen.has(k)) continue;
+    seen.add(k);
+    out.push({ title: o.title, description: o.description, code: o.code });
   }
   // offers with a coupon code first
   return out.sort((a, b) => (b.code ? 1 : 0) - (a.code ? 1 : 0)).slice(0, MAX_OFFERS);
