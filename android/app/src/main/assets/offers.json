@@ -1,5 +1,250 @@
 {
-  "date": null,
-  "generatedAt": null,
-  "brands": []
+  "date": "2026-11-26",
+  "generatedAt": "2026-11-26T09:51:15.311Z",
+  "brands": [
+    {
+      "id": "dominos",
+      "name": "Domino's",
+      "match": "domino",
+      "website": "https://pizzaonline.dominos.co.in/",
+      "ok": true,
+      "source": "https://www.dominos.co.in/offers",
+      "offers": [
+        {
+          "title": "And to shoo away those end-of-the-month blues while placing your order with our pizza restaurant, check out the everyday",
+          "description": "",
+          "code": ""
+        }
+      ],
+      "date": "2026-11-26",
+      "stale": false
+    },
+    {
+      "id": "pizzahut",
+      "name": "Pizza Hut",
+      "match": "pizza ?hut",
+      "website": "https://www.pizzahut.co.in/",
+      "ok": true,
+      "source": "https://www.pizzahut.co.in/order/deals/",
+      "offers": [
+        {
+          "title": "Medium Pan Pizzas Starting At ₹ 199.",
+          "description": "Medium Pan Pizzas Starting At ₹ 199",
+          "code": ""
+        },
+        {
+          "title": "Personal Pan Pizzas Starting At ₹ 99.",
+          "description": "Personal Pan Pizzas Starting At ₹ 99",
+          "code": ""
+        },
+        {
+          "title": "Super Value Deal : 50% Off on Medium Pizzas.",
+          "description": "Avail 50% Off on the medium pizzas",
+          "code": ""
+        },
+        {
+          "title": "Get 50% OFF on Medium Pizzas.",
+          "description": "(Prices are after discount). Super Value Deal. Select 2 Medium Pizzas @ 50% OFF",
+          "code": ""
+        },
+        {
+          "title": "Super Saver Meal for 4 starting at Rs.699 (Save Upto 40%).",
+          "description": "Any 2 Medium Pizzas, 1 Garlic Bread Stix, 1 Potato Poppers, 1 Tandoori Pocket Paneer",
+          "code": ""
+        },
+        {
+          "title": "Super Saver Meal Combo at Rs.799 (Save Upto 50%).",
+          "description": "2 Med Pizza of Choice, 1 Garlic Breadstix, 1 Creamy Garlic Breadstix, 2 Pepsi Pet Bottles",
+          "code": ""
+        },
+        {
+          "title": "Buy One Pizza & Get One Free.",
+          "description": "Super Value Deal: Buy 1 Medium Pizza from select range & Get another of same or lesser value Free",
+          "code": ""
+        },
+        {
+          "title": "Super Value Deal : 2 Medium Pizzas starting at Rs 599.",
+          "description": "Chose any 2 of your favorite medium pizza",
+          "code": ""
+        },
+        {
+          "title": "Super Value Deal : 2 Personal Pizzas starting at Rs 249.",
+          "description": "Chose any 2 of your favorite medium pizza",
+          "code": ""
+        },
+        {
+          "title": "1 Plus 1 Personal San Francisco Style Meal for 2 .",
+          "description": "Choose any 2 of your favorite San Francisco Style pizza with 1 Free Pepsi",
+          "code": ""
+        },
+        {
+          "title": "Rs.",
+          "description": "100 Off on bill value above Rs.400. Valid on Ala carte orders, not applicable on deals",
+          "code": ""
+        },
+        {
+          "title": "25% Off up to 300 on bill value above 600.",
+          "description": "Valid on Ala carte orders, not applicable on deals",
+          "code": ""
+        },
+        {
+          "title": "My Box Starting at Rs.189.",
+          "description": "Meal for 1: 1 Personal Pizza, 2 Pc Plain Garlic Bread & 1 Pepsi Pet Bottle starting at Rs 189",
+          "code": ""
+        },
+        {
+          "title": "40% Off up to 125 on bill value above 300.",
+          "description": "Valid on Ala carte orders, not applicable on deals",
+          "code": ""
+        },
+        {
+          "title": "Flavour Fun Box of 4 with Free Pepsi.",
+          "description": "Get 4 assorted Flavor Fun Pizzas with Free Pepsi. Perfect pizza crust topped with exciting new sauces, cheesy dressing & your favorite toppings",
+          "code": ""
+        }
+      ],
+      "date": "2026-11-26",
+      "stale": false
+    },
+    {
+      "id": "lapinoz",
+      "name": "La Pino'z",
+      "match": "pino",
+      "website": "https://www.lapinozpizza.in/",
+      "ok": true,
+      "source": "https://www.lapinozpizza.in/offers",
+      "offers": [
+        {
+          "title": "SAVE50 COPY Get 50% OFF on Exotic & Specialty Pizzas Only Valid on Exotic & Specialty Pizzas – Regular, Medium & Large R",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "Get 50% OFF on Exotic & Specialty Pizzas",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "LPN200 COPY Get Flat Discount of Rs.200 on Minimum Billing of Rs.999.",
+          "description": "Get Flat Discount of Rs.200 on Minimum Billing of Rs.999. Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
+          "code": ""
+        },
+        {
+          "title": "Get Flat Discount of Rs.200 on Minimum Billing of Rs.999.",
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
+          "code": ""
+        },
+        {
+          "title": "B2G1 FREE COPY Buy 2 Items and Get 1 Free!!!",
+          "description": "Buy 2 Items and Get 1 Free on MOV 349: Applicable on : veg pizza/non veg pizza , sides , desserts , international pizzas and double burst Read more",
+          "code": ""
+        },
+        {
+          "title": "B2G1 FREE COPY",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "LP50FR2 COPY Get your 2nd pizza at 50% Off Get your 2nd pizza at 50% Off Valid Only on Regular,Medium and Large Pizza Re",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "Get your 2nd pizza at 50% Off",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "Get your 2nd pizza at 50% Off Valid Only on Regular,Medium and Large Pizza",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "LPN100 COPY Get Flat Discount of Rs.100 on Minimum Billing of Rs.599.",
+          "description": "Get Flat Discount of Rs.100 on Minimum Billing of Rs.599. Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
+          "code": ""
+        },
+        {
+          "title": "Get Flat Discount of Rs.100 on Minimum Billing of Rs.599.",
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
+          "code": ""
+        },
+        {
+          "title": "LPN75 COPY Get Flat Discount of Rs.75 on Minimum Billing of Rs.399 Get Flat Discount of Rs.75 on Minimum Billing of Rs.3",
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
+          "code": ""
+        },
+        {
+          "title": "Get Flat Discount of Rs.75 on Minimum Billing of Rs.399.",
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
+          "code": ""
+        },
+        {
+          "title": "LPN50 COPY Get Flat Discount of Rs.50 on Minimum Billing of Rs.299 Get Flat Discount of Rs.50 on Minimum Billing of Rs.2",
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos Read more",
+          "code": ""
+        },
+        {
+          "title": "Get Flat Discount of Rs.50 on Minimum Billing of Rs.299.",
+          "description": "Cannot be clubbed with any other offers. Not Valid on BOGO, Classic maniacs pizza , Beverages and Combos",
+          "code": ""
+        }
+      ],
+      "date": "2026-11-26",
+      "stale": false
+    },
+    {
+      "id": "ovenstory",
+      "name": "Oven Story",
+      "match": "oven ?story",
+      "website": "https://www.ovenstory.in/",
+      "ok": false,
+      "stale": false,
+      "offers": [],
+      "date": "2026-11-26",
+      "error": "no offers found on page"
+    },
+    {
+      "id": "mojo",
+      "name": "Mojo Pizza",
+      "match": "mojo",
+      "website": "https://www.mojopizza.in/",
+      "ok": true,
+      "source": "https://www.mojopizza.in/offers",
+      "offers": [
+        {
+          "title": "For New Users.",
+          "description": "Flat 50% OFF upto ₹150 on first order",
+          "code": "PIZZA150"
+        },
+        {
+          "title": "For All Users.",
+          "description": "Get Free Chocolava Cake",
+          "code": "FREEDELIGHT"
+        },
+        {
+          "title": "All Offers Flat OFF Flat OFF For New Users Flat 50% OFF upto ₹150 on first order PIZZA150 For All Users Get Free Chocola",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "For New Users Flat 50% OFF upto ₹150 on first order PIZZA150 For All Users Get Free Chocolava Cake FREEDELIGHT",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "Flat 50% OFF upto ₹150 on first order",
+          "description": "",
+          "code": ""
+        },
+        {
+          "title": "Free Pizza",
+          "description": "",
+          "code": ""
+        }
+      ],
+      "date": "2026-11-26",
+      "stale": false
+    }
+  ]
 }
