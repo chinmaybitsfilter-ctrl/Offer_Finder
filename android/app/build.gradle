@@ -1,0 +1,38 @@
+plugins {
+    id "com.android.application"
+}
+
+android {
+    namespace "com.chinmay.pizzaoffers"
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.chinmay.pizzaoffers"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    // Fixed key committed to the repo so every new build installs as an update.
+    signingConfigs {
+        release {
+            storeFile file("app.keystore")
+            storePassword "pizzaoffers"
+            keyAlias "pizza"
+            keyPassword "pizzaoffers"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}

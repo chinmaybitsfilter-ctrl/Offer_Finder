@@ -1,0 +1,38 @@
+name: Build Android app
+
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["data/**", "android/app/src/main/assets/offers.json", "README.md"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.9"
+      - name: Build APK
+        working-directory: android
+        run: gradle assembleRelease --no-daemon
+      - name: Rename APK
+        run: cp android/app/build/outputs/apk/release/app-release.apk PizzaOffers.apk
+      - name: Publish to Releases (latest)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Pizza Offers – latest build
+          body: |
+            Download **PizzaOffers.apk** on your phone and open it to install.
+            Offers refresh automatically every day – no need to reinstall.
+          files: PizzaOffers.apk
+          make_latest: true

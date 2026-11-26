@@ -1,0 +1,45 @@
+name: Fetch today's pizza offers
+
+on:
+  schedule:
+    - cron: "37 0 * * *"   # 6:07 AM IST
+    - cron: "7 6 * * *"    # 11:37 AM IST (catch offers that go live late morning)
+    - cron: "7 12 * * *"   # 5:37 PM IST (dinner-time deals)
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["scraper/**", ".github/workflows/offers.yml"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: offers
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install Playwright
+        working-directory: scraper
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+      - name: Scrape official sites
+        working-directory: scraper
+        run: node scrape.mjs
+      - name: Commit offers
+        run: |
+          git config user.name "offer-bot"
+          git config user.email "offer-bot@users.noreply.github.com"
+          git add data/offers.json android/app/src/main/assets/offers.json
+          if git diff --cached --quiet; then echo "No change"; exit 0; fi
+          git commit -m "Offers for $(TZ=Asia/Kolkata date +%F)"
+          git pull --rebase origin main
+          git push
