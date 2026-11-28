@@ -1,6 +1,6 @@
 {
-  "date": "2026-11-27",
-  "generatedAt": "2026-11-27T13:21:12.570Z",
+  "date": "2026-11-28",
+  "generatedAt": "2026-11-28T01:54:59.907Z",
   "brands": [
     {
       "id": "dominos",
@@ -16,7 +16,7 @@
           "code": ""
         }
       ],
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "stale": false
     },
     {
@@ -103,7 +103,7 @@
           "code": ""
         }
       ],
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "stale": false
     },
     {
@@ -170,7 +170,7 @@
           "code": ""
         }
       ],
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "stale": false
     },
     {
@@ -181,7 +181,7 @@
       "ok": false,
       "stale": false,
       "offers": [],
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "error": "no offers found on page"
     },
     {
@@ -213,7 +213,7 @@
           "code": ""
         }
       ],
-      "date": "2026-11-27",
+      "date": "2026-11-28",
       "stale": false
     }
   ]
